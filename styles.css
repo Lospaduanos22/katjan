@@ -1,55 +1,27 @@
 body {
-    background-color: pink;
-    overflow: hidden;
-    position: relative;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: pink !important;
 }
 
-.login-container {
-    max-width: 400px;
-    margin: 50px auto;
+.container {
+    text-align: center;
+    max-width: 300px; /* Adjust the maximum width as needed */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
 }
 
-/* Floating hearts */
-.heart {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url('heart.png') no-repeat center center;
-    background-size: contain;
-    animation: float 10s linear infinite;
-    opacity: 0.5;
+.gif-container {
+    margin-top: 20px;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(100vh) translateX(0);
-    }
-    100% {
-        transform: translateY(-100vh) translateX(100px);
-    }
-}
-
-/* Multiple hearts with different animation durations and delays */
-.heart:nth-child(2) {
-    animation-duration: 12s;
-    animation-delay: 2s;
-}
-
-.heart:nth-child(3) {
-    animation-duration: 15s;
-    animation-delay: 4s;
-}
-
-.heart:nth-child(4) {
-    animation-duration: 18s;
-    animation-delay: 6s;
-}
-
-.heart:nth-child(5) {
-    animation-duration: 20s;
-    animation-delay: 8s;
+.gif-container .tenor-gif-embed {
+    display: block;
+    margin: 0 auto;
 }
