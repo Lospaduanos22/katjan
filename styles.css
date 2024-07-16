@@ -1,0 +1,55 @@
+body {
+    background-color: pink;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('heart.png') no-repeat center center;
+    background-size: contain;
+    animation: float 10s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0);
+    }
+    100% {
+        transform: translateY(-100vh) translateX(100px);
+    }
+}
+
+/* Multiple hearts with different animation durations and delays */
+.heart:nth-child(2) {
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+    animation-duration: 15s;
+    animation-delay: 4s;
+}
+
+.heart:nth-child(4) {
+    animation-duration: 18s;
+    animation-delay: 6s;
+}
+
+.heart:nth-child(5) {
+    animation-duration: 20s;
+    animation-delay: 8s;
+}
