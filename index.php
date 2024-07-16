@@ -15,6 +15,7 @@
         <div class="tenor-gif-embed" data-postid="10492517158609762937" data-share-method="host" data-aspect-ratio="1.18519" data-width="20%"></div>
         <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     </div>
+    <a href="dash.php" class="btn btn-primary">CLICK ME</a>
 </div>
 
 <script src="script.js"></script>
