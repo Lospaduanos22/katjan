@@ -10,10 +10,11 @@
         body {
             font-family: Arial, sans-serif;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: pink !important;
             overflow: hidden; /* Prevents hearts from being visible outside the body */
             position: relative; /* Necessary for absolute positioning of hearts */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
         .card-text {
             min-height: 100px; /* Ensure consistent card height */
@@ -61,7 +62,7 @@
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <!-- Card 1 -->
-        <div class="col">
+        <div class="col mb-4">
             <div class="card h-100">
                 <img src="images/img1.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -73,7 +74,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col">
+        <div class="col mb-4">
             <div class="card h-100">
                 <img src="images/img2.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -84,7 +85,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col">
+        <div class="col mb-4">
             <div class="card h-100">
                 <img src="images/img3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -95,7 +96,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="col">
+        <div class="col mb-4">
             <div class="card h-100">
                 <img src="images/img4.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -105,13 +106,14 @@
             </div>
         </div>
     </div>
+
     <div class="container text-center">
-    <p>Happy 16th, Kate!!<br> We've been together already for the past 1,765 days and I just wanna say thank you for never failing in making me feel loved.<br>
-    I will always remind you to take your medicine kay ma live longer pa kita together and I'm really looking forward to our next na pagkikita. <br>
-    Kanina an pag open han site may flower na gif didto haak pag uli tuod na ito. I love you soo much and Happy 16th!! 
-<br> 
-   </p>
+        <p>Happy 16th, Kate!!<br> We've been together already for the past 1,765 days and I just wanna say thank you for never failing in making me feel loved.<br>
+        I will always remind you to take your medicine kay ma live longer pa kita together and I'm really looking forward to our next na pagkikita. <br>
+        Kanina an pag open han site may flower na gif didto haak pag uli tuod na ito. I love you soo much and Happy 16th!! 
+        </p>
     </div>
+
     <!-- Floating hearts -->
     <script>
         // Function to create a heart element
@@ -131,8 +133,6 @@
         // Create hearts periodically
         setInterval(createHeart, 500); // Adjust timing as needed
     </script>
-
-   
 
 </div>
 
